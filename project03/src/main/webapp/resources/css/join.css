@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.joinname{
+	display:inline-block;
+	width:140px;
+}
+
+.joinbutton1{
+	display:inline-block;
+	width:80px;
+	height:20px;
+	background-color:#eee;
+	text-align:center;
+	vertical-align:middle;
+	font-size:13px;
+	cursor:pointer;
+}
+
+.joinbutton2{
+	display:inline-block;
+	width:300px;
+	height:25px;
+	background-color:#eee;
+	text-align:center;
+	vertical-align:middle;
+	font-weight:bold;
+	font-size:15px;
+	border: none;
+	cursor:pointer;
+	font-family: 'Gowun Dodum', sans-serif;
+}
