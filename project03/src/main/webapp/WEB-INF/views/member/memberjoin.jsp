@@ -2,9 +2,27 @@
 <%@ include file="/WEB-INF/views/include/header.jsp" %>
 <link rel="stylesheet" href="/css/join.css">
 <script type="text/javascript" src="/js/join.js" ></script>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
 <script>
 function agreement() {
 	window.open("agreement", "agreement", "width=480, height=480");
+}
+
+function id_select(id){
+	$.ajax({
+		url: "idok", //전송받을 페이지 경로
+		type: "post", //데이터 읽어오는 방식
+		dataType: "text", //데이터 방식
+		data: "id="+$("#id").val(), //데이터 전달
+		error:function(){ //실패일 경우
+			alert("실패");
+		},
+		success:function(text){ //성공일 경우
+			$("#id_result").html(text);
+		}
+	
+	});
 }
 </script>
 <div>
@@ -18,11 +36,11 @@ function agreement() {
 		<div>
 			<div style="display:inline-block;width:320px"></div>
 			<div style="display:inline-block;font-size:16px;">
-			<form method="post">
+			<form method="post" onsubmit="return check()">
 				<div>
 					<div class="joinname">아이디<font color="red" size="2">*</font></div>
 					<div style="display:inline-block;"><input id="id" name="id"></div>
-					<div class="joinbutton1">중복확인</div>
+					<div class="joinbutton1"><a onclick="id_select(id.value)">중복확인</a></div><span id="id_result"> </span>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
@@ -37,7 +55,7 @@ function agreement() {
 				<div style="height:10px"> </div>
 				<div>
 					<div class="joinname">이름<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;"><input id="name" name="name"></div>
+					<div style="display:inline-block;"><input id="membername" name="membername"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
@@ -68,13 +86,14 @@ function agreement() {
 				<div>
 					<div class="joinname">이용약관동의<font color="red" size="2">*</font></div>
 					<div style="display:inline-block;">
-						<label><input type="checkbox" id="agreement">개인정보 수집·이용 동의</label><a href="javascript:agreement();" style="font-size:10px;color:#777">[내용보기]</a>
+						<label><input type="checkbox" id="agreement" name="agreement">개인정보 수집·이용 동의</label><a href="javascript:agreement();" style="font-size:10px;color:#777">[내용보기]</a>
 					</div>
 				</div>
 				<div style="height:20px"> </div>
 				<div style="text-align:center">
 					<div><input type="submit" value="회원가입" class="joinbutton2"></div>
 				</div>
+				<div style="height:20px"> </div>
 				</form>
 			</div>
 		</div>

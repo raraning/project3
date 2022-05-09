@@ -23,6 +23,12 @@ public class MemberDAOImpl implements MemberDAO {
 	public void insertMember(MemberVO vo) {
 		sqlSession.insert(namespace+".insertMember",vo);
 	}
+
+	@Override
+	public String idCheck(String id) {
+		return sqlSession.selectOne(namespace+".idCheck",id);
+		
+	}
 	
 	
 }

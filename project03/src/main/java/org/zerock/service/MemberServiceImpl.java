@@ -16,6 +16,11 @@ public class MemberServiceImpl implements MemberService{
 	public void regist(MemberVO member) throws Exception {
 		dao.insertMember(member);
 	}
+
+	@Override
+	public String idCheck(String id) throws Exception {
+		return dao.idCheck(id);		
+	}
 	
 	
 }

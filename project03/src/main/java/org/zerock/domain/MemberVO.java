@@ -6,7 +6,7 @@ public class MemberVO {
 	private int uid;
 	private String id;
 	private String pass;
-	private String name;
+	private String membername;
 	private String birth;
 	private String gender;
 	private String passport;
@@ -34,11 +34,11 @@ public class MemberVO {
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
-	public String getName() {
-		return name;
+	public String getMemberame() {
+		return membername;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setMembername(String membername) {
+		this.membername = membername;
 	}
 	public String getBirth() {
 		return birth;
@@ -91,7 +91,7 @@ public class MemberVO {
 	
 	@Override
 	public String toString() {
-		return "MemberVO [uid=" + uid + ", id=" + id + ", pass=" + pass + ", name=" + name + ", birth=" + birth
+		return "MemberVO [uid=" + uid + ", id=" + id + ", pass=" + pass + ", membername=" + membername + ", birth=" + birth
 				+ ", gender=" + gender + ", passport=" + passport + ", email=" + email + ", phone=" + phone + ", level="
 				+ level + ", point=" + point + ", joindate=" + joindate + "]";
 	}

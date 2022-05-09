@@ -24,7 +24,7 @@
 			<!-- 로그인 회원가입 고객센터 -->
 			<div class="head1">
 				<div class="headtop ht1"> </div>
-				<div class="headtop"><a href="">로그인</a></div>
+				<div class="headtop"><a href="/member/login">로그인</a></div>
 				<div class="headtop" style="width:5px;"> </div>
 				<div class="headtop"><a href="/member/memberjoin">회원가입</a></div>
 				<div class="headtop" style="width:5px;"> </div>
