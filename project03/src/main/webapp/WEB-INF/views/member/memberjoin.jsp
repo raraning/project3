@@ -2,8 +2,6 @@
 <%@ include file="/WEB-INF/views/include/header.jsp" %>
 <link rel="stylesheet" href="/css/join.css">
 <script type="text/javascript" src="/js/join.js" ></script>
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
 <script>
 function agreement() {
 	window.open("agreement", "agreement", "width=480, height=480");

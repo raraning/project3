@@ -31,6 +31,9 @@
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
 	</bean>
 	
+	<tx:annotation-driven />
+	
 	<context:component-scan base-package="org.zerock.persistence"></context:component-scan>	
+	<context:component-scan base-package="org.zerock.service"></context:component-scan>	
 		
 </beans>

@@ -123,6 +123,57 @@ a:active { text-decoration: none; }
 	line-height:45px;
 }
 
+.menuoverseas{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:40px;
+}
+
+.menujeju{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:40px;
+}
+
+.menuhotel{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:40px;
+}
+
+.navimenu{
+	border-bottom:1px solid #ccc;
+	height:40px;
+	font-size:13px;
+}
+
+.navimenu1{
+	display:none;
+	position:absolute;
+	border-bottom:1px solid #ccc;
+	background:white;
+	height:40px;
+	font-size:13px;
+}
+
+.navimenu2{
+	display:none;
+	position:absolute;
+	border-bottom:1px solid #ccc;
+	background:white;
+	height:40px;
+	font-size:13px;
+}
+
+.navimenu3{
+	display:none;
+	position:absolute;
+	border-bottom:1px solid #ccc;
+	background:white;
+	height:40px;
+	font-size:13px;
+}
+
 
 
 

@@ -33,3 +33,8 @@
 #id_result{
 	font-size:11px;
 }
+
+.loginname{
+	display:inline-block;
+	width:100px;
+}

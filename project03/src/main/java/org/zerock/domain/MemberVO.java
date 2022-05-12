@@ -34,7 +34,7 @@ public class MemberVO {
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
-	public String getMemberame() {
+	public String getMembername() {
 		return membername;
 	}
 	public void setMembername(String membername) {
