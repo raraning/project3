@@ -36,7 +36,7 @@ $(document).ready(function(){
 		$('.ismenu3').css('font-weight','bold');
 	});
 	
-	/*출발지 선택 모달*/
+	/* 패키지_출발지 선택 모달 */
 	$('.tripselectwhere').click(function(){
 		$('.tripoption').css('display','block');
 		$('.tripselectwhere').css('border','1px solid #b8b1ff');
@@ -96,7 +96,7 @@ $(document).ready(function(){
 		$('.modal').css('display','none');
 	});
 	
-	/*여행시작일 선택 모달*/
+	/* 패키지_여행시작일 선택 모달 */
 	$('.tripselectwhen').click(function(){
 		$('.tripoptiondate').css('display','block');
 		$('.tripselectwhen').css('border','1px solid #b8b1ff');
@@ -112,7 +112,7 @@ $(document).ready(function(){
 		$('.tripselectwhen').html('<img src="/img/calendar.png" width=15 height=15>&nbsp;'+tripdate1);
 	});
 	
-	/*항공권,우리끼리*/
+	/* 패키지_항공권,우리끼리 */
 	
 	$('.tripair').click(function(){
 		$('.tripair').css('display','none');
@@ -134,8 +134,29 @@ $(document).ready(function(){
 		$('.tripusno').css('display','none');
 	});
 	
-	
-	
+	/* 항공_왕복,편도 클릭 */
+	$('.is_flight').click(function(){
+		$('.is_flight').css('border','1px solid black');
+		$('.is_flight').css('background','black');
+		$('.is_flight').css('color','white');
+		$('.is_flight2').css('border','1px solid white');
+		$('.is_flight2').css('background','white');
+		$('.is_flight2').css('color','black');
+		$('.ismenu2_air_arrow1').css('display','block');
+		$('.ismenu2_air_arrow1').css('display','inline-block');
+		$('.ismenu2_air_arrow2').css('display','none');
+	});
+	$('.is_flight2').click(function(){
+		$('.is_flight2').css('border','1px solid black');
+		$('.is_flight2').css('background','black');
+		$('.is_flight2').css('color','white');
+		$('.is_flight').css('border','1px solid white');
+		$('.is_flight').css('background','white');
+		$('.is_flight').css('color','black');
+		$('.ismenu2_air_arrow1').css('display','none');
+		$('.ismenu2_air_arrow2').css('display','block');
+		$('.ismenu2_air_arrow2').css('display','inline-block');
+	});
 });
 
 

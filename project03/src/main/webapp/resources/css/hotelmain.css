@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.hotelmain_back{
+	width:auto;
+	height:500px;
+}
+
+#img_id{
+	width:1920px;
+	height:512px;
+	object-fit:cover;
+}
+
+.hotel_search{
+	position:relative;
+	left:500px;
+	bottom:150px;
+	border:1px solid #eee;
+	background:white;
+	width:1000px;
+	height:100px;
+	line-height:50px;
+}
+
+.hotel_search_content{
+	display:inline-block;
+}
+
+.hotel_checkinout_box{
+	border:1px solid #eee;
+	border-radius:3px;
+	background:#eee;
+	width:250px;
+	height:70px;
+}
+
+#hotel_search_checkin{
+	display:inline-block;
+}
+
+#hotel_search_checkout{
+	display:inline-block;
+}
+
+.hotel_search_button{
+	width:200px;
+	height:70px;
+	border:1px solid #eee;
+	border-radius:3px;
+	background:#b2aeff;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+

@@ -219,6 +219,7 @@
 	font-size:15px;
 	text-align:center;
 	line-height:30px;
+	cursor:pointer;
 }
 
 .is_flight2{
@@ -231,21 +232,32 @@
 	font-size:15px;
 	text-align:center;
 	line-height:30px;
+	cursor:pointer;
 }
 
 .is_air{
 	display:inline-block;
-	width:60px;
-	height:30px;
+	width:140px;
+	height:35px;
 	border:1px solid white;
 	background:white;
-	border-radius:20px;
 	font-size:15px;
 	text-align:center;
 	line-height:30px;
 }
 
 .ismenu2_air{
+	display:none;
+}
+
+.ismenu2_air_arrow1{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.ismenu2_air_arrow2{
+	display:inline-block;
+	vertical-align:middle;
 	display:none;
 }
 

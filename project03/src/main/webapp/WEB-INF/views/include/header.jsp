@@ -23,8 +23,18 @@ $(document).ready(function(){
 	},function(){
 		$('.navimenu1').css('display','none');
 	});
+	$('.navimenu1').hover(function(){
+		$('.navimenu1').css('display','block');
+	},function(){
+		$('.navimenu1').css('display','none');
+	});
 	
 	$('.menujeju').hover(function(){
+		$('.navimenu2').css('display','block');
+	},function(){
+		$('.navimenu2').css('display','none');
+	});
+	$('.navimenu2').hover(function(){
 		$('.navimenu2').css('display','block');
 	},function(){
 		$('.navimenu2').css('display','none');
@@ -35,6 +45,12 @@ $(document).ready(function(){
 	},function(){
 		$('.navimenu3').css('display','none');
 	});
+	$('.navimenu3').hover(function(){
+		$('.navimenu3').css('display','block');
+	},function(){
+		$('.navimenu3').css('display','none');
+	});
+	
 });
 </script>
 </head>
@@ -125,7 +141,7 @@ $(document).ready(function(){
 				<div class="menubar1" style="width:20px;"> </div>
 				<div class="menubar1"><a href="">항공</a></div>
 				<div class="menubar1" style="width:20px;"> </div>
-				<div class="menuhotel"><a href="">호텔</a></div>
+				<a href="/hotel/hotelmain"><div class="menuhotel">호텔</div></a>
 				<div class="menubar1" style="width:20px;"> </div>
 				<div class="menubar1"><a href="">투어/입장권</a></div>
 			</div>
@@ -164,9 +180,9 @@ $(document).ready(function(){
 	</div>
 	<div class="navimenu3">
 		<div class="menubar1" style="width:580px;"> </div>
-		<div class="menubar1">호텔예약</div>
+		<div class="menubar1"><a href="">호텔예약</a></div>
 		<div class="menubar1" style="width:20px;"> </div>
-		<div class="menubar1">펜션/풀빌라예약</div>
+		<div class="menubar1"><a href="">펜션/풀빌라예약</a></div>
 		<div class="menubar1" style="width:1180px;"> </div>
 	</div>
 	

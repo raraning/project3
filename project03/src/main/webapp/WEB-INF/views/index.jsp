@@ -96,11 +96,13 @@
 					<div style="height:15px;"> </div>
 					<div>
 						<div class="is_flight">왕복</div>
-						<div class="is_flight">편도</div>
+						<div class="is_flight2">편도</div>
 					</div>
 					<div style="height:10px;"> </div>
 					<div>
 						<div class="is_air">출발지</div>
+						<div class="ismenu2_air_arrow1"><img src="/img/exchange.png" width=20 height=20></div>
+						<div class="ismenu2_air_arrow2"><img src="/img/right-arrow.png" width=20 height=20></div>
 						<div class="is_air">도착지</div>
 					</div>
 				</div>
