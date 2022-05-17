@@ -145,6 +145,9 @@ $(document).ready(function(){
 		$('.ismenu2_air_arrow1').css('display','block');
 		$('.ismenu2_air_arrow1').css('display','inline-block');
 		$('.ismenu2_air_arrow2').css('display','none');
+		$('.is_air_hide1').css('display','block');
+		$('.is_air_hide1').css('display','inline-block');
+		$('.is_air_hide2').css('display','none');
 	});
 	$('.is_flight2').click(function(){
 		$('.is_flight2').css('border','1px solid black');
@@ -156,7 +159,127 @@ $(document).ready(function(){
 		$('.ismenu2_air_arrow1').css('display','none');
 		$('.ismenu2_air_arrow2').css('display','block');
 		$('.ismenu2_air_arrow2').css('display','inline-block');
+		$('.is_air_hide2').css('display','block');
+		$('.is_air_hide1').css('display','none');
 	});
+	
+	/* 항공_가는날 오는날 선택 모달 */
+	/* 가는날 */
+	$('.is_air1').click(function(){
+		$('.tripoptiondate1').css('display','block');
+		$('.is_air1').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.tripoptiondate1').css('display','none');
+		$('.is_air1').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('#tripdate1').change(function(){
+		var tripdate11 = $('#tripdate1').val();
+		$('.is_air1').html('<img src="/img/calendar.png" width=15 height=15>&nbsp;'+tripdate11);
+	});
+	
+	/* 가는날_편도 */
+	$('.is_air5').click(function(){
+		$('.tripoptiondate3').css('display','block');
+		$('.is_air5').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.tripoptiondate3').css('display','none');
+		$('.is_air5').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('#tripdate3').change(function(){
+		var tripdate33 = $('#tripdate3').val();
+		$('.is_air3').html('<img src="/img/calendar.png" width=15 height=15>&nbsp;'+tripdate33);
+	});
+	
+	/* 오는날 */
+	$('.is_air2').click(function(){
+		$('.tripoptiondate2').css('display','block');
+		$('.is_air2').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.tripoptiondate2').css('display','none');
+		$('.is_air2').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('#tripdate2').change(function(){
+		var tripdate22 = $('#tripdate2').val();
+		$('.is_air2').html('<img src="/img/calendar.png" width=15 height=15>&nbsp;'+tripdate22);
+	});
+	
+	/* 항공_인원수 선택 */
+	$('.is_air3').click(function(){
+		$('.is_air_people').css('display','block');
+		$('.is_air3').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.is_air_people').css('display','none');
+		$('.is_air3').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('.is_air_people_cnt.plus').click(function(){
+		var people_cnt = Number($('#is_air_people_input').val())+1;
+		if(people_cnt > 9){
+			people_cnt = 9;
+		}
+		$('#is_air_people_input').val(Number(people_cnt));
+		$('.is_air3').html('<img src="/img/profile.png" width=15 height=15>&nbsp;'+people_cnt);
+	});
+	$('.is_air_people_cnt.minus').click(function(){
+		var people_cnt = Number($('#is_air_people_input').val())-1;
+		if(people_cnt <= 0){
+			people_cnt = 1;
+		}
+		$('.is_air_people_input').val(Number(people_cnt));
+		$('.is_air3').html('<img src="/img/profile.png" width=15 height=15>&nbsp;'+people_cnt);
+	});
+	
+	/* 항공_좌석등급선택 */
+	$('.is_air4').click(function(){
+		$('.seatoption').css('display','block');
+		$('.is_air4').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.seatoption').css('display','none');
+		$('.is_air4').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	
+	$('.seatposition.sp1').click(function(){
+		$('.is_air4').html('<img src="/img/seat.png" width=15 height=15>&nbsp;일반석');
+		$('.seatoption').css('display','none');
+		$('.is_air4').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('.seatposition.sp2').click(function(){
+		$('.is_air4').html('<img src="/img/seat.png" width=15 height=15>&nbsp;프리미엄 일반석');
+		$('.seatoption').css('display','none');
+		$('.is_air4').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('.seatposition.sp3').click(function(){
+		$('.is_air4').html('<img src="/img/seat.png" width=15 height=15>&nbsp;비즈니스석');
+		$('.seatoption').css('display','none');
+		$('.is_air4').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('.seatposition.sp4').click(function(){
+		$('.is_air4').html('<img src="/img/seat.png" width=15 height=15>&nbsp;일등석');
+		$('.seatoption').css('display','none');
+		$('.is_air4').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	
+	
+	
+	
 });
 
 

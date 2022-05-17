@@ -40,7 +40,6 @@
 								<div class="tripwhere tw7">양양</div>
 								<div class="tripwhere tw8">강원</div>
 							</div>
-							<div class="modal"></div>
 							<div style="height:10px;"> </div>
 							<div class="tripair">
 								<div style="height:4px;"> </div>
@@ -100,11 +99,52 @@
 					</div>
 					<div style="height:10px;"> </div>
 					<div>
-						<div class="is_air">출발지</div>
+						<div class="is_air"><img src="/img/placeholder.png" width=15 height=15>&nbsp;출발지</div>
 						<div class="ismenu2_air_arrow1"><img src="/img/exchange.png" width=20 height=20></div>
 						<div class="ismenu2_air_arrow2"><img src="/img/right-arrow.png" width=20 height=20></div>
-						<div class="is_air">도착지</div>
+						<div class="is_air"><img src="/img/placeholder.png" width=15 height=15>&nbsp;도착지</div>
 					</div>
+					<div style="height:10px;"> </div>
+					<div class="is_air_hide1">
+						<div class="is_air1"><img src="/img/calendar.png" width=15 height=15>&nbsp;가는날선택</div>
+						<div class="tripoptiondate1">
+								<input type="date" id="tripdate1" name="tripdate1" class="tripdate1">
+						</div>
+						<div class="is_air2"><img src="/img/calendar.png" width=15 height=15>&nbsp;오는날선택</div>
+						<div class="tripoptiondate2">
+								<input type="date" id="tripdate2" name="tripdate2" class="tripdate2">
+						</div>
+					</div>
+					<div class="is_air_hide2">
+						<div class="is_air5"><img src="/img/calendar.png" width=15 height=15>&nbsp;가는날선택</div>
+						<div class="tripoptiondate3">
+								<input type="date" id="tripdate3" name="tripdate3" class="tripdate3">
+						</div>
+					</div>
+					
+					<div style="height:10px;"> </div>
+					<div>
+						<div class="is_air3"><img src="/img/profile.png" width=15 height=15>&nbsp;인원수선택</div>
+						<div class="is_air4"><img src="/img/seat.png" width=15 height=15>&nbsp;좌석등급선택</div>
+						<div class="seatoption">
+								<div class="seatposition sp1">일반석</div>
+								<div class="seatposition sp2">프리미엄 일반석</div>
+								<div class="seatposition sp3">비즈니스석</div>
+								<div class="seatposition sp4">일등석</div>
+							</div>
+					</div>
+					<div>
+						<div class="is_air_people">
+							<div class="is_air_people_cnt minus"><img src="/img/minus.png" width=20 height=20></div>
+							<div style="display:inline-block;">&nbsp;&nbsp;&nbsp;
+								<input type="number" min="1" max="9" value="1" readonly id="is_air_people_input">
+							</div>
+							<div class="is_air_people_cnt plus"><img src="/img/plus.png" width=20 height=20></div>
+						</div>
+						<div class="is_air_seat"></div>
+					</div>
+					<div style="height:15px;"> </div>
+						<div class="indexbutton">항공권 검색</div>
 				</div>
 				<!-- 항공 검색 끝(ismenu2) -->
 				<!-- 호텔 검색 시작(ismenu3) -->
@@ -117,6 +157,8 @@
 	</div>
 	<div style="display:inline-block;width:400px"> </div>
 </div>
+<!-- modal -->
+<div class="modal"></div>
 
 
 

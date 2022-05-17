@@ -237,13 +237,73 @@
 
 .is_air{
 	display:inline-block;
-	width:140px;
+	width:153px;
 	height:35px;
 	border:1px solid white;
 	background:white;
 	font-size:15px;
 	text-align:center;
 	line-height:30px;
+}
+
+.is_air1{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_air2{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_air3{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_air4{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+.is_air5{
+	display:inline-block;
+	width:336px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+	margin-right:165px;
 }
 
 .ismenu2_air{
@@ -259,6 +319,144 @@
 	display:inline-block;
 	vertical-align:middle;
 	display:none;
+}
+
+.is_air_hide2{
+	display:none;
+}
+
+.tripoptiondate1{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+}
+
+.tripoptiondate2{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+	margin-left:171px;
+}
+.tripoptiondate3{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:336px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+	margin-left:171px;
+}
+
+.tripdate1{
+	border:1px solid white;
+	background:white;
+}
+
+.tripdate2{
+	border:1px solid white;
+	background:white;
+}
+
+.tripdate3{
+	border:1px solid white;
+	background:white;
+}
+
+.is_air_people{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	position:absolute;
+	display:none;
+}
+
+.is_air_people_cnt{
+	display:inline-block;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+#is_air_people_input{
+	width:35px;
+	border:0;
+	text-align:center;
+	font-size:20px;
+}
+
+.is_air_seat{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	margin-left:171px;
+	display:none;
+}
+
+.seatoption{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:87px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	margin-left:171px;
+}
+
+.seatposition{
+	cursor:pointer;
+	z-index: 3;
+	position:relative;
+}
+
+.seatposition:hover{
+	cursor:pointer;
+	background:#eee;
+	z-index: 3;
+	position:relative;
 }
 
 
