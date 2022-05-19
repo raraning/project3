@@ -72,7 +72,7 @@ $(document).ready(function(){
 					<c:otherwise>
 						<div class="headtop"><a href="/member/login">로그인</a></div>
 						<div class="headtop" style="width:5px;"> </div>
-						<div class="headtop"><a href="/member/memberjoin">회원가입</a></div>
+						<div class="headtop"><a href="/member/join">회원가입</a></div>
 					</c:otherwise>
 				</c:choose>
 				<div class="headtop" style="width:5px;"> </div>

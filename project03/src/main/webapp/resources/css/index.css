@@ -303,7 +303,6 @@
 	text-align:center;
 	line-height:30px;
 	cursor:pointer;
-	margin-right:165px;
 }
 
 .ismenu2_air{
@@ -368,7 +367,6 @@
 	z-index: 2;
 	position:absolute;
 	vertical-align:middle;
-	margin-left:171px;
 }
 
 .tripdate1{
@@ -465,5 +463,161 @@
 	display:none;
 }
 
+.is_hotel1{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
 
+.is_hotel2{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
 
+.is_hotel3{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.is_hotel4{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+.is_hotel5{
+	display:inline-block;
+	width:336px;
+	height:35px;
+	border:1px solid white;
+	background:white;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+
+.tripoptiondate4{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+}
+
+.tripoptiondate5{
+	text-align:center;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	width:165px;
+	height:30px;
+	font-size:15px;
+	display:none;
+	z-index: 2;
+	position:absolute;
+	vertical-align:middle;
+	margin-left:171px;
+}
+
+.tripdate4{
+	border:1px solid white;
+	background:white;
+}
+
+.tripdate5{
+	border:1px solid white;
+	background:white;
+}
+
+.is_hotel_people{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	position:absolute;
+	display:none;
+}
+
+.is_hotel_people_cnt{
+	display:inline-block;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+#is_hotel_people_input{
+	width:35px;
+	border:0;
+	text-align:center;
+	font-size:20px;
+}
+
+.is_hotel_room{
+	display:inline-block;
+	width:165px;
+	height:35px;
+	border-right:1px solid #b8b1ff;
+	border-left:1px solid #b8b1ff;
+	border-bottom:1px solid #b8b1ff;
+	background:white;
+	z-index: 2;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+	position:absolute;
+	display:none;
+	margin-left:171px;
+}
+
+.is_hotel_room_cnt{
+	display:inline-block;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+#is_hotel_room_input{
+	width:35px;
+	border:0;
+	text-align:center;
+	font-size:20px;
+}

@@ -39,29 +39,52 @@ function startAnimation(){
 <div class="hotelmain_back">
 	<div><img id="img_id" src="/img/hotel_back1.jpg"></div>
 	<div class="hotel_search">
-		<div style="height:15px"></div>
+		<div style="height:18px"></div>
 		<div>
-			<div style="display:inline-block;width:10px"> </div>
+			<div style="display:inline-block;width:23px"> </div>
 			<div class="hotel_search_content">
-				<input id="hotel_search_where" name="hotel_search_where" placeholder="어디로떠나세요?">
+				<div>
+					<input id="hotel_search_where" name="hotel_search_where" placeholder="어디로떠나세요?">
+				</div>
 			</div>
+			<div style="display:inline-block;width:3px"> </div>
 			<div class="hotel_search_content">
 				<div class="hotel_checkinout_box">
+					<div style="display:inline-block;width:3px"> </div>
+					<div style="display:inline-block;vertical-align:middle;"><img src="/img/calendar (1).png" width=20 height=20></div>
+					<div style="display:inline-block;">가는날 선택</div>
+					<div style="display:inline-block;">~</div>
+					<div style="display:inline-block;">오는날 선택</div>
+				</div>
+				<div class="hotel_checkinout_hide1">
 					<input type="date" id="hotel_search_checkin" name="hotel_search_checkin">
 					<input type="date" id="hotel_search_checkout" name="hotel_search_checkout">
 				</div>
 			</div>
+			<div style="display:inline-block;width:3px"> </div>
 			<div class="hotel_search_content">
+				<div class="hotel_checkinout_box">
+					<div style="display:inline-block;width:3px"> </div>
+					<div style="display:inline-block;vertical-align:middle;"><img src="/img/profile (1).png" width=20 height=20></div>
+					<div style="display:inline-block;">인원수 선택</div>
+					<div style="display:inline-block;">·</div>
+					<div style="display:inline-block;">객실수 선택</div>
+				</div>
+			</div>
+			<div class="hotel_checkinout_hide2">
 				<input id="hotel_search_room" name="hotel_search_room">
 				<input id="hotel_search_people" name="hotel_search_people">
 			</div>
+			<div style="display:inline-block;width:3px"> </div>
 			<div class="hotel_search_content">
-				<button class="hotel_search_button">숙소 검색</button>
+				<div class="hotel_search_button">숙소 검색</div>
 			</div>
 		</div>
 		<div style="height:15px"></div>
 	</div>
 </div>
+<!-- modal -->
+<div class="modal"></div>
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 
 

@@ -121,7 +121,6 @@
 								<input type="date" id="tripdate3" name="tripdate3" class="tripdate3">
 						</div>
 					</div>
-					
 					<div style="height:10px;"> </div>
 					<div>
 						<div class="is_air3"><img src="/img/profile.png" width=15 height=15>&nbsp;인원수선택</div>
@@ -144,11 +143,47 @@
 						<div class="is_air_seat"></div>
 					</div>
 					<div style="height:15px;"> </div>
-						<div class="indexbutton">항공권 검색</div>
+					<div class="indexbutton">항공권 검색</div>
 				</div>
 				<!-- 항공 검색 끝(ismenu2) -->
 				<!-- 호텔 검색 시작(ismenu3) -->
 				<div class="ismenu3_hotel">
+					<div style="height:15px;"> </div>
+					<div><input id="tripsearch" name="tripsearch" placeholder="어디로 떠나세요?"></div>
+					<div style="height:10px;"> </div>
+					<div class="is_hotel_hide1">
+						<div class="is_hotel1"><img src="/img/calendar.png" width=15 height=15>&nbsp;가는날선택</div>
+						<div class="tripoptiondate4">
+								<input type="date" id="tripdate4" name="tripdate4" class="tripdate4">
+						</div>
+						<div class="is_hotel2"><img src="/img/calendar.png" width=15 height=15>&nbsp;오는날선택</div>
+						<div class="tripoptiondate5">
+								<input type="date" id="tripdate5" name="tripdate5" class="tripdate5">
+						</div>
+					</div>
+					<div style="height:10px;"> </div>
+					<div>
+						<div class="is_hotel3"><img src="/img/profile.png" width=15 height=15>&nbsp;인원수선택</div>
+						<div class="is_hotel4"><img src="/img/room-key.png" width=20 height=20>&nbsp;객실수선택</div>
+					</div>
+					<div>
+						<div class="is_hotel_people">
+							<div class="is_hotel_people_cnt minus"><img src="/img/minus.png" width=20 height=20></div>
+							<div style="display:inline-block;">&nbsp;&nbsp;&nbsp;
+								<input type="number" min="1" max="9" value="1" readonly id="is_hotel_people_input">
+							</div>
+							<div class="is_hotel_people_cnt plus"><img src="/img/plus.png" width=20 height=20></div>
+						</div>
+						<div class="is_hotel_room">
+							<div class="is_hotel_room_cnt minus"><img src="/img/minus.png" width=20 height=20></div>
+							<div style="display:inline-block;">&nbsp;&nbsp;&nbsp;
+								<input type="number" min="1" max="9" value="1" readonly id="is_hotel_room_input">
+							</div>
+							<div class="is_hotel_room_cnt plus"><img src="/img/plus.png" width=20 height=20></div>
+						</div>
+					</div>
+					<div style="height:15px;"> </div>
+					<div class="indexbutton">숙소 검색</div>
 				</div>
 				<!-- 호텔 검색 끝(ismenu3) -->
 			</div>

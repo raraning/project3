@@ -277,8 +277,94 @@ $(document).ready(function(){
 		$('.modal').css('display','none');
 	});
 	
+	/* 호텔_가는날 오는날 */
+	/* 가는날 */
+	$('.is_hotel1').click(function(){
+		$('.tripoptiondate4').css('display','block');
+		$('.is_hotel1').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.tripoptiondate4').css('display','none');
+		$('.is_hotel1').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('#tripdate4').change(function(){
+		var tripdate44 = $('#tripdate4').val();
+		$('.is_hotel1').html('<img src="/img/calendar.png" width=15 height=15>&nbsp;'+tripdate44);
+	});
 	
+	/* 오는날 */
+	$('.is_hotel2').click(function(){
+		$('.tripoptiondate5').css('display','block');
+		$('.is_hotel2').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.tripoptiondate5').css('display','none');
+		$('.is_hotel2').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('#tripdate5').change(function(){
+		var tripdate55 = $('#tripdate5').val();
+		$('.is_hotel2').html('<img src="/img/calendar.png" width=15 height=15>&nbsp;'+tripdate55);
+	});
 	
+	/* 호텔_인원수 선택 */
+	$('.is_hotel3').click(function(){
+		$('.is_hotel_people').css('display','block');
+		$('.is_hotel3').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.is_hotel_people').css('display','none');
+		$('.is_hotel3').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('.is_hotel_people_cnt.plus').click(function(){
+		var people_cnt = Number($('#is_hotel_people_input').val())+1;
+		if(people_cnt > 9){
+			people_cnt = 9;
+		}
+		$('#is_hotel_people_input').val(Number(people_cnt));
+		$('.is_hotel3').html('<img src="/img/profile.png" width=15 height=15>&nbsp;'+people_cnt);
+	});
+	$('.is_hotel_people_cnt.minus').click(function(){
+		var people_cnt = Number($('#is_hotel_people_input').val())-1;
+		if(people_cnt <= 0){
+			people_cnt = 1;
+		}
+		$('.is_hotel_people_input').val(Number(people_cnt));
+		$('.is_hotel3').html('<img src="/img/profile.png" width=15 height=15>&nbsp;'+people_cnt);
+	});
+	
+	/* 호텔_객실수 선택 */
+	$('.is_hotel4').click(function(){
+		$('.is_hotel_room').css('display','block');
+		$('.is_hotel4').css('border','1px solid #b8b1ff');
+		$('.modal').css('display','block');
+	});
+	$('.modal').click(function(){
+		$('.is_hotel_room').css('display','none');
+		$('.is_hotel4').css('border','1px solid white');
+		$('.modal').css('display','none');
+	});
+	$('.is_hotel_room_cnt.plus').click(function(){
+		var room_cnt = Number($('#is_hotel_room_input').val())+1;
+		if(room_cnt > 9){
+			room_cnt = 9;
+		}
+		$('#is_hotel_room_input').val(Number(room_cnt));
+		$('.is_hotel4').html('<img src="/img/room-key.png" width=15 height=15>&nbsp;'+room_cnt);
+	});
+	$('.is_hotel_room_cnt.minus').click(function(){
+		var room_cnt = Number($('#is_hotel_room_input').val())-1;
+		if(room_cnt <= 0){
+			room_cnt = 1;
+		}
+		$('.is_hotel_room_input').val(Number(room_cnt));
+		$('.is_hotel4').html('<img src="/img/room-key.png" width=15 height=15>&nbsp;'+room_cnt);
+	});
 	
 });
 

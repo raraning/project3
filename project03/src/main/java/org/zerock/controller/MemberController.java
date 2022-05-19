@@ -30,6 +30,11 @@ public class MemberController {
 	private static final String namespace = "org.zerock.mapper.MemberMapper";
 	
 	@GetMapping("/memberjoin")
+	public void memberjoinGET(MemberVO member) throws Exception{
+		logger.info("join get================");
+	}
+	
+	@GetMapping("/join")
 	public void joinGET(MemberVO member) throws Exception{
 		logger.info("join get================");
 	}
