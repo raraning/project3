@@ -31,7 +31,7 @@ public class MemberController {
 	
 	@GetMapping("/memberjoin")
 	public void memberjoinGET(MemberVO member) throws Exception{
-		logger.info("join get================");
+		logger.info("memberjoin get================");
 	}
 	
 	@GetMapping("/join")
@@ -40,7 +40,7 @@ public class MemberController {
 	}
 	
 	@PostMapping("/memberjoin")
-	public String joinPOST(MemberVO member, RedirectAttributes rttr) throws Exception{
+	public String memberjoinPOST(MemberVO member, RedirectAttributes rttr) throws Exception{
 		logger.info("join post==============");
 		logger.info(member.toString());
 		
@@ -57,6 +57,11 @@ public class MemberController {
 	@GetMapping("/login")
 	public void loginGET() throws Exception{
 		logger.info("login get==============");
+	}
+	
+	@GetMapping("/logintype")
+	public void logintypeGET() throws Exception{
+		logger.info("logintype get==============");
 	}
 
 	@PostMapping("/login")

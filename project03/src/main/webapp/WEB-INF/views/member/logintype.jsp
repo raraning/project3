@@ -12,11 +12,11 @@
 			<div style="display:inline-block;width:430px"> </div>
 			<div style="display:inline-block;font-size:16px;">
 				<div>
-					<a href="/member/memberjoin"><div class="join_select_button">일반 회원가입</div></a>
+					<a href="/member/login"><div class="join_select_button">회원 로그인</div></a>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<a href="/company/companyjoin"><div class="join_select_button">여행사 회원가입</div></a>
+					<a href="/company/companylogin"><div class="join_select_button">여행사 로그인</div></a>
 				</div>
 				<div style="height:20px"> </div>
 			</div>

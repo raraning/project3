@@ -69,8 +69,13 @@ $(document).ready(function(){
 						<div class="headtop" style="width:10px;"> </div>
 						<div class="headtop"><a href="/member/logout">로그아웃</a></div>
 					</c:when>
+					<c:when test="${sessionScope.c_id != null}">
+						<div class="headtop">파트너 ${sessionScope.c_name}님 환영합니다!<img src="/img/hot-air-balloon.png" width=17 height=17></div>
+						<div class="headtop" style="width:10px;"> </div>
+						<div class="headtop"><a href="/member/logout">로그아웃</a></div>
+					</c:when>
 					<c:otherwise>
-						<div class="headtop"><a href="/member/login">로그인</a></div>
+						<div class="headtop"><a href="/member/logintype">로그인</a></div>
 						<div class="headtop" style="width:5px;"> </div>
 						<div class="headtop"><a href="/member/join">회원가입</a></div>
 					</c:otherwise>
@@ -98,6 +103,12 @@ $(document).ready(function(){
 						<a href="/member/mymenu">
 						<div style="text-align:center"><img src="/img/profile.png" width=40 height=40></div>
 						<div style="text-align:center;color:#2e4da5;font-weight:bold">마이메뉴</div>
+						</a>
+					</c:when>
+					<c:when test="${sessionScope.c_id != null}">
+						<a href="/company/companymenu">
+						<div style="text-align:center"><img src="/img/profile.png" width=40 height=40></div>
+						<div style="text-align:center;color:#2e4da5;font-weight:bold">파트너메뉴</div>
 						</a>
 					</c:when>
 					<c:otherwise>

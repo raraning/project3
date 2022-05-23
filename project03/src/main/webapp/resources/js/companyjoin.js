@@ -1,20 +1,20 @@
 function check(){
 	
-	if(id.value == ""){
+	if(c_id.value == ""){
 		alert("아이디를 입력해주세요");
-		id.focus();
+		c_id.focus();
 		return false;
 	}
 	
-	if(pass.value == ""){
+	if(c_pass.value == ""){
 		alert("비밀번호를 입력해주세요");
-		pass.focus();
+		c_pass.focus();
 		return false;
 	}
 	
-	if(pass.value.length < 4){
+	if(c_pass.value.length < 4){
 		alert("비밀번호는 4자리 이상 입력해주세요");
-		pass.focus();
+		c_pass.focus();
 		return false;
 	}
 	
@@ -24,33 +24,27 @@ function check(){
 		return false;
 	}
 	
-	if(passok.value != pass.value){
+	if(passok.value != c_pass.value){
 		alert("입력된 비밀번호가 일치하지 않습니다");
 		passok.focus();
 		return false;
 	}
 	
-	if(membername.value == ""){
-		alert("이름을 입력해주세요");
-		membername.focus();
+	if(c_name.value == ""){
+		alert("여행사 명을 입력해주세요");
+		c_name.focus();
 		return false;
 	}
 	
-	if(birth.value == ""){
-		alert("생년월일을 입력해주세요");
-		birth.focus();
-		return false;
-	}
-	
-	if(email.value == ""){
+	if(c_email.value == ""){
 		alert("이메일을 입력해주세요");
-		email.focus();
+		c_email.focus();
 		return false;
 	}
 	
-	if(phone.value == ""){
+	if(c_phone.value == ""){
 		alert("전화번호를 입력해주세요");
-		phone.focus();
+		c_phone.focus();
 		return false;
 	}
 	
@@ -62,13 +56,13 @@ function check(){
 	
 	if(id_reault.value == ""){
 		alert("아이디 중복확인을 해주세요");
-		id.focus();
+		c_id.focus();
 		return false;
 	}
 	
 	if(id_reault.value == "존재하는 아이디입니다."){
 		alert("아이디 중복확인을 다시 해주세요");
-		id.focus();
+		c_id.focus();
 		return false;
 	}
 	

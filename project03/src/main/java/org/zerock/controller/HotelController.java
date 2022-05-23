@@ -14,8 +14,13 @@ public class HotelController {
 	private static final Logger logger = LoggerFactory.getLogger(HotelController.class);
 	
 	@GetMapping("/hotelmain")
-	public void hotelmainGET(HotelVO hotel) throws Exception{
+	public void hotelmainGET() throws Exception{
 		logger.info("hotelmain get=============");
+	}
+	
+	@GetMapping("/hotelregist")
+	public void hotelregistGET() throws Exception{
+		logger.info("hotel regist get=============");
 	}
 	
 }
