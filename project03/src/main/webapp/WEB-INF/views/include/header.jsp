@@ -81,7 +81,7 @@ $(document).ready(function(){
 					</c:otherwise>
 				</c:choose>
 				<div class="headtop" style="width:5px;"> </div>
-				<div class="headtop"><a href="">고객센터</a></div>
+				<div class="headtop"><a href="/test/login">고객센터</a></div>
 			</div>
 			<!-- 로고 검색 마이페이지 -->
 			<div class="head2">

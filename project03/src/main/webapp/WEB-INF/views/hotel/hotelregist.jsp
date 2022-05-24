@@ -13,56 +13,48 @@
 			<div style="display:inline-block;font-size:16px;">
 			<form method="post" onsubmit="return check()">
 				<div>
-					<div class="joinname">아이디<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;"><input id="id" name="id"></div>
-					<div class="joinbutton1"><a onclick="id_select(id.value)">중복확인</a></div><span id="id_result"> </span>
+					<div class="joinname">숙소명</div>
+					<div style="display:inline-block;"><input id="h_name" name="h_name"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">비밀번호<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;"><input type="password" id="pass" name="pass"></div>
+					<div class="joinname">숙소 종류</div>
+					<div style="display:inline-block;"><input type="radio" id="h_class" name="h_class" value="1" checked>호텔<input type="radio" id="h_class" name="h_class" value="2">펜션</div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">비밀번호 확인<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;"><input type="password" id="passok" name="passok"></div>
+					<div class="joinname">숙소 성급</div>
+					<div style="display:inline-block;"><input id="h_star" name="h_star"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">이름<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;"><input id="membername" name="membername"></div>
+					<div class="joinname">객실당 수용 인원 수</div>
+					<div style="display:inline-block;"><input id="h_people" name="h_people"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">생년월일<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;"><input type="date" id="birth" name="birth" style="width:173px"></div>
+					<div class="joinname">숙소 지역</div>
+					<div style="display:inline-block;"><input id="h_country" name="h_country"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">성별<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;"><input type="radio" id="gender" name="gender" value="M" checked>남<input type="radio" id="gender" name="gender" value="F">여</div>
+					<div class="joinname">숙소 주소</div>
+					<div style="display:inline-block;"><input id="h_address" name="h_address"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">이메일<font color="red" size="2">*</font></div>
+					<div class="joinname">이메일</div>
 					<div style="display:inline-block;"><input type="email" id="email" name="email"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">전화번호<font color="red" size="2">*</font></div>
+					<div class="joinname">전화번호</div>
 					<div style="display:inline-block;"><input type="tel" id="phone" name="phone"></div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
-					<div class="joinname">여권번호<font color="gray" size="2">(선택사항)</font></div>
+					<div class="joinname">여권번호</div>
 					<div style="display:inline-block;"><input id="passport" name="passport"></div>
-				</div>
-				<div style="height:10px"> </div>
-				<div>
-					<div class="joinname">이용약관동의<font color="red" size="2">*</font></div>
-					<div style="display:inline-block;">
-						<label><input type="checkbox" id="agreement" name="agreement">개인정보 수집·이용 동의</label><a href="javascript:agreement();" style="font-size:10px;color:#777">[내용보기]</a>
-					</div>
 				</div>
 				<div style="height:20px"> </div>
 				<div style="text-align:center">
