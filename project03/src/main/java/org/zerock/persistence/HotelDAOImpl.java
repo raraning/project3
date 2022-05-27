@@ -18,6 +18,11 @@ public class HotelDAOImpl implements HotelDAO{
 	public void insertHotel(HotelVO hotel) {
 		sqlSession.insert(namespace+".insertHotel",hotel);
 	}
+
+	@Override
+	public void addAttack(String fullName) throws Exception {
+		sqlSession.insert(namespace+".addAttach",fullName);
+	}
 	
 	
 }

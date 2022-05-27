@@ -24,6 +24,15 @@
 	<context:component-scan base-package="org.zerock.controller" />
 	<context:component-scan base-package="org.zerock.service" />
 	
-	
+	<!-- 첨부파일 용량 제한 및 경로 -->
+
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="maxUploadSize" value="10485760"></beans:property>
+		<beans:property name="defaultEncoding" value="utf-8"/>
+	</beans:bean>	
+
+	<beans:bean id="uploadPath" class="java.lang.String">
+		<beans:constructor-arg value="C:\\Users\\KTE001\\git\\repository2\\project03\\src\\main\\webapp\\resources\\upload"></beans:constructor-arg>
+	</beans:bean>
 	
 </beans:beans>

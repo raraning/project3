@@ -11,7 +11,7 @@
 		<div>
 			<div style="display:inline-block;width:320px"></div>
 			<div style="display:inline-block;font-size:16px;">
-			<form method="post" onsubmit="return check()">
+			<form method="post" onsubmit="return check()" enctype="multipart/form-data">
 				<div>
 					<div class="joinname">숙소명</div>
 					<div style="display:inline-block;"><input id="h_name" name="h_name"></div>
@@ -70,6 +70,11 @@
 				<div>
 					<div class="joinname">숙소 팩스</div>
 					<div style="display:inline-block;"><input id="h_fax" name="h_fax"></div>
+				</div>
+				<div style="height:10px"> </div>
+				<div>
+					<div class="joinname">숙소 사진</div>
+					<div style="display:inline-block;"><input multiple="multiple" type="file" name="file"></div>
 				</div>
 				<div style="height:20px"> </div>
 				<div style="text-align:center">

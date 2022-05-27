@@ -15,6 +15,15 @@ public class HotelServiceImpl implements HotelService{
 	@Override
 	public void regist(HotelVO hotel) throws Exception {
 		dao.insertHotel(hotel);
+		
+		//∆ƒ¿œ√∑∫Œ
+		String[] files = hotel.getFiles();
+		
+		if(files == null) { return; }
+		
+		for(String fileName:files) {
+			dao.addAttack(fileName);
+		}
 	}
 	
 	
