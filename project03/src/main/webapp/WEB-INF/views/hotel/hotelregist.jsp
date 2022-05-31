@@ -74,7 +74,7 @@
 				<div style="height:10px"> </div>
 				<div>
 					<div class="joinname">숙소 사진</div>
-					<div style="display:inline-block;"><input multiple="multiple" type="file" name="file"></div>
+					<div style="display:inline-block;"><input multiple="multiple" type="file" id="file" name="file"></div>
 				</div>
 				<div style="height:20px"> </div>
 				<div style="text-align:center">

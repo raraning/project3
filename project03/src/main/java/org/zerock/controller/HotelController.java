@@ -79,6 +79,8 @@ public class HotelController {
 		
 		rttr.addFlashAttribute("savedName",savedName);
 		
+		hotel.setFiles(savedName);
+		logger.info(hotel.toString());
 		service.regist(hotel);
 		
 		return"redirect:/";

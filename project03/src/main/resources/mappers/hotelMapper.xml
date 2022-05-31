@@ -10,7 +10,7 @@
 	</insert>
 	
 	<insert id="addAttach">
-		insert into file_hotel (fullName,h_uid) values (#{fullName},LAST_INSERT_ID())
+		insert into file_hotel (fullName,h_uid) values (#{fileName},LAST_INSERT_ID())
 	</insert>
 
 </mapper>
