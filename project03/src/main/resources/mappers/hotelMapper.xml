@@ -9,8 +9,12 @@
 		(#{h_name},#{h_class},#{h_star},#{h_people},#{h_country},#{h_address},#{checkin},#{checkout},#{floor},#{rooms},#{h_tel},#{h_fax})
 	</insert>
 	
+	<select id="selectHuid" resultType="int">
+		SELECT MAX(h_uid) from pro_hotel
+	</select>
+	
 	<insert id="addAttach">
-		insert into file_hotel (fullName,h_uid) values (#{fileName},LAST_INSERT_ID())
+		insert into file_hotel (fullName,h_uid) values (#{fileName},#{h_uid})
 	</insert>
 
 </mapper>

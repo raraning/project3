@@ -4,6 +4,7 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.zerock.domain.HotelFileVO;
 import org.zerock.domain.HotelVO;
 import org.zerock.persistence.HotelDAO;
 
@@ -18,16 +19,21 @@ public class HotelServiceImpl implements HotelService{
 	public void regist(HotelVO hotel) throws Exception {
 		dao.insertHotel(hotel);
 		
-		//颇老梅何
-		String[] files = hotel.getFiles();
-		
-		if(files == null) { return; }
-		
-		for(String fileName:files) {
-			dao.addAttack(fileName);
-		}
 		
 	}
+
+	@Override
+	public void registfile(HotelFileVO hotelfile) throws Exception {
+		//颇老梅何
+				String[] files = hotelfile.getFiles();
+				
+				if(files == null) { return; }
+				
+				for(String fileName:files) {
+					dao.addAttack(fileName);
+				}
+	}
+	
 	
 	
 }

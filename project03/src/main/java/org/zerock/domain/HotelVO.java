@@ -1,7 +1,5 @@
 package org.zerock.domain;
 
-import java.util.Arrays;
-
 public class HotelVO {
 
 		private int h_uid;
@@ -17,8 +15,6 @@ public class HotelVO {
 		private int rooms;
 		private String h_tel;
 		private String h_fax;
-		
-		private String[] files;
 		
 		public int getH_uid() {
 			return h_uid;
@@ -98,20 +94,13 @@ public class HotelVO {
 		public void setH_fax(String h_fax) {
 			this.h_fax = h_fax;
 		}
-
-		public String[] getFiles() {
-			return files;
-		}
-		public void setFiles(String[] files) {
-			this.files = files;
-		}
 		
 		@Override
 		public String toString() {
 			return "HotelVO [h_uid=" + h_uid + ", h_name=" + h_name + ", h_class=" + h_class + ", h_star=" + h_star
 					+ ", h_people=" + h_people + ", h_country=" + h_country + ", h_address=" + h_address + ", checkin="
 					+ checkin + ", checkout=" + checkout + ", floor=" + floor + ", rooms=" + rooms + ", h_tel=" + h_tel
-					+ ", h_fax=" + h_fax + ", files=" + Arrays.toString(files) + "]";
+					+ ", h_fax=" + h_fax+ "]";
 		}
 		
 		
