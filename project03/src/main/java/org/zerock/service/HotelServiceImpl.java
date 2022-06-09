@@ -23,14 +23,16 @@ public class HotelServiceImpl implements HotelService{
 	}
 
 	@Override
-	public void registfile(HotelFileVO hotelfile) throws Exception {
+	public void registfile(HotelFileVO hotelfile, int h_uid) throws Exception {
 		//∆ƒ¿œ√∑∫Œ
 				String[] files = hotelfile.getFiles();
+				
+				System.out.println(hotelfile);
 				
 				if(files == null) { return; }
 				
 				for(String fileName:files) {
-					dao.addAttack(fileName);
+					dao.addAttack(fileName,h_uid);
 				}
 	}
 	

@@ -1,5 +1,8 @@
 package org.zerock.persistence;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -20,8 +23,15 @@ public class HotelDAOImpl implements HotelDAO{
 	}
 
 	@Override
-	public void addAttack(String fullName) throws Exception {
-		sqlSession.insert(namespace+".addAttach",fullName);
+	public void addAttack(String fullName, int h_uid) throws Exception {
+		System.out.println(h_uid);
+		
+		Map<String, Object> paramMap = new HashMap<>();
+		
+		paramMap.put("fullName", fullName);
+		paramMap.put("h_uid", h_uid);
+		
+		sqlSession.insert(namespace+".addAttach",paramMap);
 	}
 	
 	

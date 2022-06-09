@@ -47,6 +47,11 @@ public class HotelFileVO {
 		return "HotelFileVO [fullName=" + fullName + ", h_uid=" + h_uid + ", regdate=" + regdate + ", files="
 				+ Arrays.toString(files) + "]";
 	}
+
+	public void setFullName(String[] savedName) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }

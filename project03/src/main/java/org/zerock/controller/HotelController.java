@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -77,6 +78,7 @@ public class HotelController {
 		logger.info("file.length : "+file.length);
 		
 		String savedName[] = new String[file.length];
+		String signdate = "";
 		
 		for(int i=0;i<file.length;i++) {
 			
@@ -88,7 +90,7 @@ public class HotelController {
 				
 				Date today = new Date();
 				SimpleDateFormat cal = new SimpleDateFormat("yyyyMMddhhmmss");
-				String signdate = cal.format(today);
+				signdate = cal.format(today);
 				
 				savedName[i] = signdate+"_"+file[i].getOriginalFilename();
 				byte[] fileData = file[i].getBytes();
@@ -97,15 +99,20 @@ public class HotelController {
 				
 				File target = new File(uploadPath, savedName[i]);
 				
-				//FileCopyUtils.copy(fileData, target);
+				FileCopyUtils.copy(fileData, target);
 			}
 		}
 		
 		rttr.addFlashAttribute("savedName",savedName);
+		rttr.addFlashAttribute("fullName",savedName);
+		rttr.addFlashAttribute("regdate",signdate);
 		
+		hotelfile.setFullName(savedName);
+		hotelfile.setRegdate(signdate);
 		hotelfile.setFiles(savedName);
+		
 		logger.info(hotelfile.toString());
-		service.registfile(hotelfile);
+		service.registfile(hotelfile,h_uid);
 		
 		return"redirect:/";
 	}
