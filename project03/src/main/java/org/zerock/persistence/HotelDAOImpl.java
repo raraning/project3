@@ -1,12 +1,12 @@
 package org.zerock.persistence;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+import org.zerock.domain.HotelFileVO;
 import org.zerock.domain.HotelVO;
 
 @Repository
@@ -26,12 +26,18 @@ public class HotelDAOImpl implements HotelDAO{
 	public void addAttack(String fullName, int h_uid) throws Exception {
 		System.out.println(h_uid);
 		
-		Map<String, Object> paramMap = new HashMap<>();
+		//mapper로 값을 여러개 전달시 객체에 담아서 전달 ★
+		HotelFileVO vo = new HotelFileVO();
+		vo.setFullName(fullName);
+		vo.setH_uid(h_uid);
 		
-		paramMap.put("fullName", fullName);
-		paramMap.put("h_uid", h_uid);
-		
-		sqlSession.insert(namespace+".addAttach",paramMap);
+		System.out.println("==========last vo===========:"+vo.toString());
+		sqlSession.insert(namespace+".addAttach",vo);
+	}
+
+	@Override
+	public List<HotelVO> listHotel() throws Exception {
+		return sqlSession.selectList(namespace+".listHotel");
 	}
 	
 	

@@ -1,5 +1,7 @@
 package org.zerock.service;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -27,13 +29,20 @@ public class HotelServiceImpl implements HotelService{
 		//∆ƒ¿œ√∑∫Œ
 				String[] files = hotelfile.getFiles();
 				
-				System.out.println(hotelfile);
+				System.out.println("=============== serviceimpl .. hotelfile ===========:"+hotelfile);
 				
 				if(files == null) { return; }
 				
 				for(String fileName:files) {
-					dao.addAttack(fileName,h_uid);
+					System.out.println("====fileName====:"+fileName);
+					System.out.println("====h_uid====:"+h_uid);
+					dao.addAttack(fileName,h_uid);					
 				}
+	}
+
+	@Override
+	public List<HotelVO> listHotel() throws Exception {
+		return dao.listHotel();
 	}
 	
 	

@@ -8,7 +8,7 @@
 		<div style="text-align:center;font-size:25px;font-weight:bold">마이메뉴</div>
 		<div>내 정보 수정</div>
 		<a href="/hotel/hotelregist"><div>숙소 등록하기</div></a>
-		<a href=""><div>숙소상품 판매하기</div></a>
+		<a href="/hotel/hotelsellregist"><div>숙소상품 판매하기</div></a>
 	</div>
 	<div style="display:inline-block;width:400px"> </div>
 </div>

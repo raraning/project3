@@ -107,14 +107,23 @@ public class HotelController {
 		rttr.addFlashAttribute("fullName",savedName);
 		rttr.addFlashAttribute("regdate",signdate);
 		
-		hotelfile.setFullName(savedName);
+		//hotelfile.setFullName(savedName);
 		hotelfile.setRegdate(signdate);
 		hotelfile.setFiles(savedName);
+		hotelfile.setH_uid(h_uid);
 		
 		logger.info(hotelfile.toString());
 		service.registfile(hotelfile,h_uid);
 		
-		return"redirect:/";
+		return"redirect:/company/companymenu";
+	}
+	
+	//숙소상품 판매하기
+	@GetMapping("/hotelsellregist")
+	public void hotelsellregistGET(Model model,RedirectAttributes rttr) throws Exception{
+		logger.info("hotel sell regist get=============");
+		
+		rttr.addAttribute(service.listHotel());
 	}
 	
 	

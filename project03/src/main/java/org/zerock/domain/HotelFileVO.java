@@ -6,8 +6,7 @@ public class HotelFileVO {
 	
 	String fullName;
 	int h_uid;
-	String regdate;
-	
+	String regdate;	
 	private String[] files;
 
 	public String getFullName() {

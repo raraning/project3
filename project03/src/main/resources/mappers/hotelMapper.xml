@@ -14,7 +14,11 @@
 	</select>
 	
 	<insert id="addAttach">
-		insert into file_hotel (fullName,h_uid) values (#{fileName},#{h_uid})
+		insert into file_hotel (fullName,h_uid) values (#{fullName},#{h_uid})
 	</insert>
+	
+	<select id="listHotel" resultType="HotelVO">
+		select * from pro_hotel
+	</select>
 
 </mapper>
