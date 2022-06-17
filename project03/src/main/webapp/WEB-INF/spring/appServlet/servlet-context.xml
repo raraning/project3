@@ -23,6 +23,7 @@
 	
 	<context:component-scan base-package="org.zerock.controller" />
 	<context:component-scan base-package="org.zerock.service" />
+	<context:component-scan base-package="org.zerock.domain" />
 	
 	<!-- 첨부파일 용량 제한 및 경로 -->
 

@@ -10,4 +10,5 @@ public interface HotelService {
 	public void regist(HotelVO hotel) throws Exception;
 	public void registfile(HotelFileVO hotelfile, int h_uid) throws Exception;
 	public List<HotelVO> listHotel() throws Exception;
+	public List<HotelVO> listPension() throws Exception;
 }

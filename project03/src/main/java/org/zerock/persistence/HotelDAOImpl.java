@@ -39,6 +39,11 @@ public class HotelDAOImpl implements HotelDAO{
 	public List<HotelVO> listHotel() throws Exception {
 		return sqlSession.selectList(namespace+".listHotel");
 	}
+
+	@Override
+	public List<HotelVO> listPension() throws Exception {
+		return sqlSession.selectList(namespace+".listPension");
+	}
 	
 	
 }

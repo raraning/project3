@@ -44,6 +44,11 @@ public class HotelServiceImpl implements HotelService{
 	public List<HotelVO> listHotel() throws Exception {
 		return dao.listHotel();
 	}
+
+	@Override
+	public List<HotelVO> listPension() throws Exception {
+		return dao.listPension();
+	}
 	
 	
 	

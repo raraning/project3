@@ -120,10 +120,11 @@ public class HotelController {
 	
 	//숙소상품 판매하기
 	@GetMapping("/hotelsellregist")
-	public void hotelsellregistGET(Model model,RedirectAttributes rttr) throws Exception{
+	public void hotelsellregistGET(Model model, RedirectAttributes rttr) throws Exception{
 		logger.info("hotel sell regist get=============");
 		
-		rttr.addAttribute(service.listHotel());
+		model.addAttribute("listhotel",service.listHotel());
+		model.addAttribute("listpension",service.listPension());
 	}
 	
 	

@@ -18,7 +18,15 @@
 	</insert>
 	
 	<select id="listHotel" resultType="HotelVO">
-		select * from pro_hotel
+	<![CDATA[
+		select * from pro_hotel where h_uid > 0 and h_class=1 order by h_uid desc
+	]]>
+	</select>
+	
+	<select id="listPension" resultType="HotelVO">
+	<![CDATA[
+		select * from pro_hotel where h_uid > 0 and h_class=2 order by h_uid desc
+	]]>
 	</select>
 
 </mapper>
