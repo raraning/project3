@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 import org.zerock.domain.HotelFileVO;
 import org.zerock.domain.HotelVO;
+import org.zerock.domain.SellRoomVO;
 
 @Repository
 public class HotelDAOImpl implements HotelDAO{
@@ -43,6 +44,12 @@ public class HotelDAOImpl implements HotelDAO{
 	@Override
 	public List<HotelVO> listPension() throws Exception {
 		return sqlSession.selectList(namespace+".listPension");
+	}
+
+	@Override
+	public void registsellroom(SellRoomVO sellroom) throws Exception {
+		sqlSession.insert(namespace+".insertSellRoom",sellroom);
+		
 	}
 	
 	

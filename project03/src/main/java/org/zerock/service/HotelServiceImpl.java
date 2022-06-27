@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.zerock.domain.HotelFileVO;
 import org.zerock.domain.HotelVO;
+import org.zerock.domain.SellRoomVO;
 import org.zerock.persistence.HotelDAO;
 
 @Service
@@ -48,6 +49,12 @@ public class HotelServiceImpl implements HotelService{
 	@Override
 	public List<HotelVO> listPension() throws Exception {
 		return dao.listPension();
+	}
+
+	@Override
+	public void registsellroom(SellRoomVO sellroom) throws Exception {
+		dao.registsellroom(sellroom);
+		
 	}
 	
 	

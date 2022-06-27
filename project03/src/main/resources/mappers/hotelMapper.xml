@@ -28,5 +28,9 @@
 		select * from pro_hotel where h_uid > 0 and h_class=2 order by h_uid desc
 	]]>
 	</select>
+	
+	<insert id="insertSellRoom">
+		insert into sell_rrom (h_uid,h_price,h_point,breakfast,h_room) values (#{h_uid},#{h_price},#{h_point},#{breakfast},#{h_room})
+	</insert>
 
 </mapper>

@@ -11,24 +11,25 @@
 		<div>
 			<div style="display:inline-block;width:320px"></div>
 			<div style="display:inline-block;font-size:16px;">
-			<form method="post" onsubmit="return check()" enctype="multipart/form-data">
-			<input type="hidden" id="h_uid" name="h_uid" value="">
+			<form method="post" onsubmit="return check()">
 				<div>
 					<div class="joinname">숙소 종류</div>
-					<div style="display:inline-block;"><input type="radio" id="h_class" name="h_class" value="1" checked>호텔<input type="radio" id="h_class" name="h_class" value="2">펜션</div>
+					<div style="display:inline-block;"><input type="radio" id="h_class" class="h_class_h" name="h_class" value="1" checked>호텔<input type="radio" id="h_class" class="h_class_p" name="h_class" value="2">펜션</div>
 				</div>
 				<div style="height:10px"> </div>
 				<div>
 					<div class="joinname">숙소 선택</div>
-					<div style="display:inline-block;">
+					<div style="display:inline-block;" class="sel_hotel">
 						<select id="h_name" name="h_name">
+							<option selected disabled hidden>호텔을 선택해 주세요</option>
 							<c:forEach var="hotel" items="${listhotel}">
 							<option>${hotel.h_name }</option>
 							</c:forEach>
 						</select>
 					</div>
-					<div style="display:inline-block;">
+					<div style="display:inline-block;display:none;" class="sel_pension">
 						<select id="h_name" name="h_name">
+							<option selected disabled hidden>펜션을 선택해 주세요</option>
 							<c:forEach var="hotel" items="${listpension}">
 							<option>${hotel.h_name }</option>
 							</c:forEach>
@@ -40,6 +41,7 @@
 					<div class="joinname">룸 등급 선택</div>
 					<div style="display:inline-block;">
 						<select id="h_room" name="h_room">
+							<option selected disabled hidden>룸을 선택해 주세요</option>
 							<option>트윈/더블룸</option>
 							<option>디럭스룸</option>
 							<option>럭셔리룸</option>
@@ -47,7 +49,7 @@
 						</select>
 					</div>
 				</div>
-				<div class="select_pension">
+				<div class="select_pension" style="display:none;">
 					<div class="joinname">룸 이름 입력</div>
 					<div style="display:inline-block;">
 						<input id="h_room" name="h_room">

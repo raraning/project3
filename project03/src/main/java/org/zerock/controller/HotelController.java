@@ -21,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.domain.HotelFileVO;
 import org.zerock.domain.HotelVO;
+import org.zerock.domain.SellRoomVO;
 import org.zerock.service.HotelService;
 
 @Controller
@@ -125,6 +126,17 @@ public class HotelController {
 		
 		model.addAttribute("listhotel",service.listHotel());
 		model.addAttribute("listpension",service.listPension());
+	}
+	//숙소상품 판매하기
+	@PostMapping("/hotelsellregist")
+	public String hotelsellregistPOST(SellRoomVO sellroom, RedirectAttributes rttr) throws Exception{
+		logger.info("hotel sell regist post=============");
+		logger.info(sellroom.toString());
+		
+		service.registsellroom(sellroom);
+		rttr.addFlashAttribute("h_uid", sellroom.getH_uid());
+		
+		return"redirect:/hotel/hotelfileregist";
 	}
 	
 	
