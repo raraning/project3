@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
 	PUBLIC "-//mybatis.org//DTD Config 3.0//En"
@@ -7,4 +8,15 @@
 	<typeAliases>
 		<package name="org.zerock.domain"/>
 	</typeAliases>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//En"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<package name="org.zerock.domain"/>
+	</typeAliases>
+>>>>>>> refs/remotes/origin/master
 </configuration>	
